@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FILTERGRAPH>
+  <FILTER uid="22" x="0.5025380710659898" y="0.2162162162162162" DPIAware="">
+    <PLUGIN name="simpleSignalGenerator" format="VST3" category="Fx" manufacturer="yourcompany"
+            version="1.0.0" file="C:\Users\Throw\Documents\JuceProjects\audio-ad-insertion\simpleSignalGenerator\Builds\VisualStudio2017\x64\Debug\VST3\simpleSignalGenerator.vst3"
+            uid="e95c8652" isInstrument="0" fileTime="174d5cf5571" infoUpdateTime="175bc7af31d"
+            numInputs="2" numOutputs="2" isShell="0"/>
+    <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="23" x="0.4111675126903553" y="0.543918918918919" DPIAware="">
+    <PLUGIN name="audio-ad-insertion-tone-analyzer" format="VST3" category="Fx"
+            manufacturer="yourcompany" version="1.0.0" file="C:\Users\Throw\Documents\JuceProjects\audio-ad-insertion-tone-analyzer\Builds\VisualStudio2017\x64\Debug\VST3\audio-ad-insertion-tone-analyzer.vst3"
+            uid="e959d1c9" isInstrument="0" fileTime="175bc7382ef" infoUpdateTime="175bc7af31d"
+            numInputs="2" numOutputs="2" isShell="0"/>
+    <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="24" x="0.5989847715736041" y="0.8885135135135135" DPIAware="">
+    <PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uid="724248cb" isInstrument="0"
+            fileTime="0" infoUpdateTime="0" numInputs="0" numOutputs="0"
+            isShell="0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <CONNECTION srcFilter="22" srcChannel="0" dstFilter="23" dstChannel="0"/>
+  <CONNECTION srcFilter="22" srcChannel="1" dstFilter="23" dstChannel="1"/>
+  <CONNECTION srcFilter="23" srcChannel="0" dstFilter="24" dstChannel="0"/>
+  <CONNECTION srcFilter="23" srcChannel="1" dstFilter="24" dstChannel="1"/>
+</FILTERGRAPH>
